@@ -1,0 +1,17 @@
+{% include 'header.html' %}
+
+
+<body>
+    <div class="jumbotron text-center">
+      <h1>Simple Weather App</h1>
+      <p>Enter your city</p>
+      <form action="{{ url_for("Weather")}}" method="post">
+        <div class="input-group">
+          <input type="City" class="form-control" name="cty" size="50" placeholder="Input your city" required>
+          <div class="input-group-btn">
+            <button type="submit" class="btn btn-danger">Go</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
